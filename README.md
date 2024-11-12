@@ -5,7 +5,7 @@
 ## ✨ Key Features
 ## 📬 Backend
 ## 🤖 Frontend
-![Overview logo](./demo/overview.png)
+![Overview logo](./demo/fe_structure.png)
 ## 📦 Database Schema
 ### - MySQL Schema
   ```sql
