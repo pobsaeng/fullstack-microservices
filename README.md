@@ -1,10 +1,11 @@
 # Fullstack Microservices
 ## 🎯 Overview
-![Product logo](./demo/Picture1.png)
+![Overview logo](./demo/overview.png)
 ## 🛠️ Tech Stack
 ## ✨ Key Features
 ## 📬 Backend
 ## 🤖 Frontend
+![Overview logo](./demo/overview.png)
 ## 📦 Database Schema
 ### - MySQL Schema
   ```sql
