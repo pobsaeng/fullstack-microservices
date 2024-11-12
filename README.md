@@ -9,17 +9,19 @@
 ![Overview logo](./demo/fe_structure.png)
 
 ## 🛠️ Tech Stack
-  ### Frontend: React Redux Toolkit
-  ### Backend: Go Gin, Nodejs
-  ### List Service Name:
-  - reactweb
-  - product-service
-  - pos-service
-  - authen-service
-  - middleware
+### Frontend: React with Redux Toolkit  
+### Backend: Go (Gin framework), Node.js  
+
+### 🤖 List of Service Names:
+- **`reactweb`**
+- **`product-service`**
+- **`pos-service`**
+- **`authen-service`**
+- **`middleware`**
+
 
 ## ✨ Key Features
-## Product Management
+## ⭐ Product Management
 ![Overview logo](./demo/product.png)
 ### Add new Products
 ![Overview logo](./demo/product_add_new.png)
@@ -28,7 +30,7 @@
 ### Delete Products
 ![Overview logo](./demo/product_delete.png)
 
-## - POS Management
+## ⭐ POS Management
 ### Select products for sale
 ![Overview logo](./demo/select_product_for_sale.png)
 ### Sale Products
