@@ -23,6 +23,8 @@
 ## ✨ Key Features
 ## ⭐ Product Management
 ![Overview logo](./demo/product.png)
+### View Product Images
+![Overview logo](./demo/image_dialog.png)
 ### Add new Products
 ![Overview logo](./demo/product_add_new.png)
 ### Update Products
