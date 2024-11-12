@@ -2,8 +2,8 @@
 ## 🎯 Overview
 ![Overview logo](./demo/overview.png)
 ### Product Management
-
-### Microservices on Docker Conatainer
+### POS Management
+#### Microservices on Docker Conatainer
 ## 🛠️ Tech Stack
 ## ✨ Key Features
 ## 📬 Backend
