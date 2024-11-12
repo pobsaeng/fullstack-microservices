@@ -1,16 +1,41 @@
 # Fullstack Microservices
 ## 🎯 Overview
 ![Overview logo](./demo/overview.png)
-### Product Management
-### POS Management
+
+## 📬 Backend Structure
+
+## 🤖 Frontend Structure
+![Overview logo](./demo/fe_structure.png)
+
 #### Microservices on Docker Conatainer
 ## 🛠️ Tech Stack
+  ### Frontend: React Redux Toolkit
+  ### Backend: Go Gin, Nodejs
+  ### List Service Name:
+  - reactweb
+  - product-service
+  - pos-service
+  - authen-service
+  - middleware
+
 ## ✨ Key Features
-## 📬 Backend
-## 🤖 Frontend
-![Overview logo](./demo/fe_structure.png)
+## Product Management
+![Overview logo](./demo/product.png)
+### Add new Products
+![Overview logo](./demo/product_add_new.png)
+### Update Products
+![Overview logo](./demo/product_update.png)
+### Delete Products
+![Overview logo](./demo/product_delete.png)
+
+## - POS Management
+### Select products for sale
+![Overview logo](./demo/select_product_for_sale.png)
+### Sale Products
+![Overview logo](./demo/sale.png)
+
 ## 📦 Database Schema
-### - MySQL Schema
+### MySQL Schema
   ```sql
 CREATE TABLE `tbl_product` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
@@ -45,7 +70,12 @@ CREATE TABLE `tbl_user` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
   ```
-### - Postgres Schema
+### Log in to phpMyAdmin for MySQL
+![Overview logo](./demo/mysql_login.png)
+### MySQL Schema
+![Overview logo](./demo/mysql_schema.png)
+
+### Postgres Schema
 ```sql
 CREATE TABLE IF NOT EXISTS sales (
     sale_id SERIAL PRIMARY KEY,
@@ -64,8 +94,15 @@ CREATE TABLE IF NOT EXISTS sale_items (
     total_price DECIMAL(10, 2) NOT NULL
 );
 ```
+### Log in to PgAdmin for Postgres
+![Overview logo](./demo/postgres_login.png)
+### Table `sale`
+![Overview logo](./demo/postgres_sale.png)
+### Table `sale_item`
+![Overview logo](./demo/postgres_sale_item.png)
 
 ## 🏃‍♂️ Deploy microservices on Docker containers.
 ```
 ./deploy_microservices_docker.sh
 ```
+![Overview logo](./demo/micro_docker.png)
