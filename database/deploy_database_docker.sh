@@ -1,9 +1,9 @@
 #!/bin/bash
 
 set -e  # Exit immediately if a command exits with a non-zero status
-
-DB_SCRIPT_1="$(pwd)/database/mysqldb/build_and_run.sh"
-DB_SCRIPT_2="$(pwd)/database/postgresqldb/build_and_run.sh"
+cd "$(dirname "$0")" || exit 1
+DB_SCRIPT_1="$(pwd)/mysqldb/build_and_run.sh"
+DB_SCRIPT_2="$(pwd)/postgresqldb/build_and_run.sh"
 
 # Function to log messages with timestamps
 log_message() {

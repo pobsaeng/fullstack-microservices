@@ -3,7 +3,7 @@
 └── 📁public
 └── 📁src
     └── 📁api
-        └── backendAPI.js //A file that defines functions to make requests to a backend server.
+        └── backendAPI.js //A file that defines functions to make requests to a fullstack-microservices server.
         └── productAPI.js //A file that contains functions to perform API operations, such as fetching, creating, and updating products.
         └── setHeaders.js //A file that contains utility functions to set HTTP headers for requests.
     └── 📁components

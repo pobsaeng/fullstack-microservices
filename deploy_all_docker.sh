@@ -8,7 +8,7 @@ if [ $? -eq 0 ]; then
     echo "Database deployment completed successfully."
 
     # Now run the deploy_microservices_docker.sh script
-    ./backend/deploy_microservices_docker.sh
+    ./fullstack-microservices/deploy_microservices_docker.sh
     ./frontend/deploy_frontend_docker.sh
 else
     echo "Database deployment failed. Skipping microservices deployment."

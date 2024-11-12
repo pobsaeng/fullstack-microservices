@@ -5,10 +5,10 @@ PARALLEL=true
 
 # List of application services to run
 scripts=(
-  "$(pwd)/backend/auth-service/build_and_run.sh"
-  "$(pwd)/backend/middleware/build_and_run.sh"
-  "$(pwd)/backend/pos-service/build_and_run.sh"
-  "$(pwd)/backend/product-service/build_and_run.sh"
+  "$(pwd)/fullstack-microservices/auth-service/build_and_run.sh"
+  "$(pwd)/fullstack-microservices/middleware/build_and_run.sh"
+  "$(pwd)/fullstack-microservices/pos-service/build_and_run.sh"
+  "$(pwd)/fullstack-microservices/product-service/build_and_run.sh"
 )
 
 ## Function to execute each script and log output
