@@ -9,8 +9,18 @@
 ![Overview logo](./demo/fe_structure.png)
 
 ## 🛠️ Tech Stack
-### Frontend: React with Redux Toolkit  
-### Backend: Go (Gin framework), Node.js  
+
+### Frontend:
+- React with Redux Toolkit  
+### Backend:
+- Go (Gin framework)
+- Node.js  
+### Database:
+- PostgreSQL
+- MySQL 
+### Containerization:
+- Docker
+
 
 ### 🤖 List of Service Names:
 - **`reactweb is developed in React & Redux Toolkit Framework`**
