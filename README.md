@@ -1,11 +1,14 @@
 # Fullstack Microservices
 ## 🎯 Overview
 ![Overview logo](./demo/overview.png)
+### Product Management
+### POS Management
+#### Microservices on Docker Conatainer
 ## 🛠️ Tech Stack
 ## ✨ Key Features
 ## 📬 Backend
 ## 🤖 Frontend
-![Overview logo](./demo/overview.png)
+![Overview logo](./demo/fe_structure.png)
 ## 📦 Database Schema
 ### - MySQL Schema
   ```sql
