@@ -1,0 +1,44 @@
+services:
+  mysqldb:
+    container_name: mysqldb_ctn
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: myP@ss!Z34  # Required for MySQL root access
+      MYSQL_DATABASE: posdb            # Initial database to create
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 30s
+      retries: 5
+      start_period: 30s
+      timeout: 30s
+    ports:
+      - "3306:3306"                    # Expose MySQL on a custom host port if needed
+    volumes:
+      - db:/var/lib/mysql              # Persist MySQL data
+      - ./db/1_schema.sql:/docker-entrypoint-initdb.d/1_schema.sql
+      - ./db/2_data.sql:/docker-entrypoint-initdb.d/2_data.sql
+    networks:
+      - pos_sys_network
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:5.1.1
+    environment:
+      PMA_HOST: mysqldb_ctn             # Point to the mysqldb container
+    ports:
+      - "8088:80"                       # Expose phpMyAdmin web UI
+    restart: unless-stopped
+    depends_on:
+      - mysqldb                         # Ensure MySQL starts before phpMyAdmin
+    networks:
+      - pos_sys_network
+
+volumes:
+  db:
+    driver: local
+
+networks:
+  pos_sys_network:
+    name: pos_sys_network
+    driver: bridge
+    external: true # Mark the network as external, it won't be created by Docker Compose

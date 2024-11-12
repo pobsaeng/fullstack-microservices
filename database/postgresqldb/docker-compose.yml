@@ -1,0 +1,41 @@
+services:
+  postgresdb:
+    container_name: postgres_ctn
+    image: postgres:10.5
+    restart: always
+    ports:
+      - "5438:5432"   # Expose PostgreSQL on port 5438 on the host, but communicate on port 5432 internally.
+    environment:
+      POSTGRES_USER: myPostgres
+      POSTGRES_PASSWORD: myP@ss!Z34
+      POSTGRES_DB: posdb
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
+      - ./sql/01_schema.sql:/docker-entrypoint-initdb.d/01_schema.sql
+      - ./sql/02_data.sql:/docker-entrypoint-initdb.d/02_data.sql
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "3"
+    networks:
+      - pos_sys_network   # Connect this service to a custom network
+
+  pgadmin:
+    container_name: pgAdmin
+    image: dpage/pgadmin4
+    restart: always
+    ports:
+      - "8080:80"    # Expose pgAdmin on port 8080
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@gmail.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    depends_on:
+      - postgresdb        # Ensure pgAdmin starts after postgres is ready
+    networks:
+      - pos_sys_network   # Connect this service to the same custom network
+
+networks:
+  pos_sys_network:        # Define a custom network
+    name: pos_sys_network
+    driver: bridge    # Use the default bridge driver for communication between services
+    external: true    # Mark the network as external, it won't be created by Docker Compose
