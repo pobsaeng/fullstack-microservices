@@ -119,4 +119,4 @@ CREATE TABLE IF NOT EXISTS sale_items (
 ```
 ./deploy_microservices_docker.sh
 ```
-![Overview logo](./demo/micro_docker.png)
+![Overview logo](./demo/microservice_docker.png)
