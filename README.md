@@ -2,12 +2,12 @@
 ## 🎯 Overview
 ![Overview logo](./demo/overview.png)
 
-## 📬 Backend Structure
+## 📬 Backend Diagram
+![Overview logo](./demo/be_diagram.png)
 
 ## 🤖 Frontend Structure
 ![Overview logo](./demo/fe_structure.png)
 
-#### Microservices on Docker Conatainer
 ## 🛠️ Tech Stack
   ### Frontend: React Redux Toolkit
   ### Backend: Go Gin, Nodejs
