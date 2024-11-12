@@ -13,11 +13,11 @@
 ### Backend: Go (Gin framework), Node.js  
 
 ### 🤖 List of Service Names:
-- **`reactweb`**
-- **`product-service`**
-- **`pos-service`**
-- **`authen-service`**
-- **`middleware`**
+- **`reactweb developed by React & Redux Toolkit Framework`**
+- **`product-service is developed in Go language`**
+- **`pos-service is developed in Node.js language`**
+- **`authen-service is developed in Go language`**
+- **`middleware is developed in Go language`**
 
 
 ## ✨ Key Features
