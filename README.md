@@ -1,6 +1,6 @@
 # Fullstack Microservices
 ## 🎯 Overview
-![Product logo](./demo/overview_picture.png)
+![Product logo](./demo/Picture1.png)
 ## 🛠️ Tech Stack
 ## ✨ Key Features
 ## 📬 Backend
